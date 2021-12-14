@@ -1,0 +1,4 @@
+{
+  "main": "../lib/testing/index.js",
+  "types": "./index.d.ts"
+}
