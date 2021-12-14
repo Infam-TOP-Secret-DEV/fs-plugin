@@ -1,6 +1,7 @@
-import { Plugin } from '@hapi/hapi';
+import { Plugin, Server } from '@hapi/hapi';
 import { FileServiceOptions, FileServiceServerAddons } from './interfaces';
-declare module '@hapi/hapi' {
+
+declare module Server {
     interface Server extends FileServiceServerAddons {
     }
 }

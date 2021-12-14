@@ -2,7 +2,7 @@ import { Plugin, Server } from '@hapi/hapi';
 import { FileServiceHandler } from './handler';
 import { FileServiceOptions, FileServiceServerAddons } from './interfaces';
 
-declare module '@hapi/hapi' {
+declare module Server {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   export interface Server extends FileServiceServerAddons {}
 }
